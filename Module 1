@@ -1,0 +1,45 @@
+an alphabet: a set of symbols used to build words of a certain language (e.g., the Latin alphabet for English, the Cyrillic alphabet for Russian, Kanji for Japanese, and so on)
+a lexis: (aka a dictionary) a set of words the language offers its users (e.g., the word "computer" comes from the English language dictionary, while "cmoptrue" doesn't; the word "chat" is present both in English and French dictionaries, but their meanings are different)
+a syntax: a set of rules (formal or informal, written or felt intuitively) used to determine if a certain string of words forms a valid sentence (e.g., "I am a python" is a syntactically correct phrase, while "I a python am" isn't)
+semantics: a set of rules determining if a certain phrase makes sense (e.g., "I ate a doughnut" makes sense, but "A doughnut ate me" doesn't)
+
+
+
+
+
+There are two different ways of transforming a program from a high-level programming language into machine language:
+
+COMPILATION - the source program is translated once (however, this act must be repeated each time you modify the source code) by getting a file (e.g., an .exe file if the code is intended to be run under MS Windows) containing the machine code; now you can distribute the file worldwide; the program that performs this translation is called a compiler or translator;
+
+-the execution of the translated code is usually faster;
+-only the user has to have the compiler - the end-user may use the code without it;
+-the translated code is stored using machine language - as it is very hard to understand it, your own inventions and programming tricks are likely to remain your secret.
+
+-the compilation itself may be a very time-consuming process - you may not be able to run your code immediately after making an amendment;
+-you have to have as many compilers as hardware platforms you want your code to be run on.
+
+INTERPRETATION - you (or any user of the code) can translate the source program each time it has to be run; the program performing this kind of transformation is called an interpreter, as it interprets the code every time it is intended to be executed; it also means that you cannot just distribute the source code as-is, because the end-user also needs the interpreter to execute it.
+The interpreter reads the source code in a way that is common in Western culture: from top to bottom and from left to right. There are some exceptions - they'll be covered later in the course.
+First of all, the interpreter checks if all subsequent lines are correct (using the four aspects covered earlier).
+If the interpreter finds an error, it finishes its work immediately. The only result in this case is an error message.
+The interpreter will inform you where the error is located and what caused it. However, these messages may be misleading, as the interpreter isn't able to follow your exact intentions, and may detect errors at some distance from their real causes.
+
+If the line looks good, the interpreter tries to execute it (note: each line is usually executed separately, so the trio "read-check-execute" can be repeated many times - more times than the actual number of lines in the source file, as some parts of the code may be executed more than once).
+It is also possible that a significant part of the code may be executed successfully before the interpreter finds an error. This is normal behavior in this execution model.
+
+-you can run the code as soon as you complete it - there are no additional phases of translation;
+-the code is stored using programming language, not machine language - this means that it can be run on computers using different machine languages; you don't compile your code separately for each different architecture.
+
+-don't expect interpretation to ramp up your code to high speed - your code will share the computer's power with the interpreter, so it can't be really fast;
+-both you and the end user have to have the interpreter to run your code.
+
+Python is an interpreted language. This means that it inherits all the described advantages and disadvantages. Of course, it adds some of its unique features to both sets.
+If you want to program in Python, you'll need the Python interpreter. You won't be able to run your code without it. Fortunately, Python is free. This is one of its most important advantages.
+
+
+
+1.2
+IDLE is an acronym: Integrated Development and Learning Environment.
+
+print("Hisssssss...")
+
