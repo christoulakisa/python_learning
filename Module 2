@@ -1,1 +1,23 @@
 print("Hello, World!")
+
+new line
+print("The itsy bitsy spider\nclimbed up the waterspout.")
+
+print with multiple arguments
+print("The itsy bitsy spider" , "climbed up" , "the waterspout.")   ------>will print single line
+
+end and sep
+print("My", "name", "is", sep="_", end="*")
+
+
+Python requires that there cannot be more than one instruction in a line.
+
+
+LITERALS
+You use literals to encode data and to put them into your code
+
+you can write this number either like this: 11111111, or like that: 11_111_111. dots or commas on numbers is prohibited
+
+Octal and hexadecimal numbers
+print(0o123)
+print(0x123)
