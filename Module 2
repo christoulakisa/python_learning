@@ -1,5 +1,7 @@
 print("Hello, World!")
 
+print(2+2), will print 4
+
 new line
 print("The itsy bitsy spider\nclimbed up the waterspout.")
 
@@ -21,3 +23,78 @@ you can write this number either like this: 11111111, or like that: 11_111_111. 
 Octal and hexadecimal numbers
 print(0o123)
 print(0x123)
+
+FLOAT NUMBERS
+number doesn't contain any commas at all.
+0.4
+4 != 4.O , one is integer the other is float
+
+EXPONENT
+3*10^8=3E8
+6.62607 x 10-34 = 6.62607E-34
+print (2  ** 3) , will print 8
+when at least one ** argument is a float, the result is a float, too.
+
+STRING
+can be empty
+
+Boolean
+True or False
+
+ESCAPE character
+print("\"I'm\"")   -------->  "I'm"
+
+
+The result produced by the division operator(/) is always a float
+A // (double slash) sign is an integer divisional operator, rounds to lowest
+
+modulo
+print(14 % 4),   give 3.0 float
+
+Operator binding(order)
+Most of Python's operators have left-sided binding
+
+print(9 % 6 % 2), gives 1 - left binding
+print(2 ** 2 ** 3) , gives 256 - right binding
+
+order of priority
+subexpressions in parentheses are always calculated first
+**
+8,/,//,%
++,-
+
+eg
+2 ** 3 ** 2 , prints 512
+
+
+
+VARIABLES
+no need to initial declare it
+name contains chars,numbers,_
+name must begin the letter
+cannot contain space
+its case sensitive
+can use other languages
+['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 
+'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 
+'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+var = 1
+print(var)
+
+var = "3.8.5"
+print("Python version: " + var)
+
+round(var,2), rounds to 2 deecimal points
+
+COMMENTS
+#
+
+INPUT
+var=input("Tell me anything..")   , result is a string /not integer r float
+anything = float(input("Enter a number: "))
+
+String handling
+string + string, cannot mix types
+string * number, eg "James" * 3
+str(number)
