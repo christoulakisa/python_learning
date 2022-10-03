@@ -1,3 +1,65 @@
 2 == 2. , True
 
 != , not equal
+>=,<=
+
+ORDER
+**
+*,/,//,%
++,-
+<,<=,>,>=
+==,!=
+
+CONDITIONS
+
+if true_or_not:
+    do_this_if_true
+    
+if the_weather_is_good:
+    go_for_a_walk()
+elif tickets_are_available:
+    go_to_the_theater()
+else:
+    play_chess_at_home()
+    
+ else might be omitted
+
+if number1 > number2: larger_number = number1
+else: larger_number = number2
+
+
+TAX calculator
+income = float(input("Enter the annual income: "))
+if income <= 85528:
+    tax = 0.18 * income - 556.02
+elif income > 85528:
+    tax = 14839.02 + 0.32 * (income-85528)
+
+if tax < 0:
+    tax = 0
+    
+ tax = round(tax, 0)
+print("The tax is:", tax, "thalers")
+    
+    
+
+RECURSION
+
+while conditional_expression:
+    instruction_one
+    instruction_two
+    instruction_three
+    :
+    :
+    instruction_n
+    
+for i in range(100):  ///range starts from 0
+    # do_something()
+    pass
+    
+for i in range(2, 8, 2): //////// 2 is first value, 8 will not be assigned (will stop at 7), 2 is step
+    print("The value of i is currently", i)
+ 
+for i in range(1,6):
+    print(i , "Mississippi")
+
