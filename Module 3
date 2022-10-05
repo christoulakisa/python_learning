@@ -100,5 +100,43 @@ while (blocks > 0):
 print("The height of the pyramid:", height)
 
 
-BOOLEAN 
-and,or,not
+BOOLEAN OPERATORS
+    LOGICAL
+and,or,not . MUST use integers, not floats
+    BITWISE
+& (ampersand) - bitwise conjunction;
+| (bar) - bitwise disjunction;
+~ (tilde) - bitwise negation;
+^ (caret) - bitwise exclusive or (xor).
+
+Binary left and right shift
+    The shift operators in Python are a pair of digraphs: << and >>
+    The left argument of these operators is an integer value whose bits are shifted. 
+    The right argument determines the size of the shift.
+    17 << 2 translates to 17 * 4
+    
+LISTS
+    numbers = [10, 5, 7, 2, 1]
+     list is a collection of elements, but each element is a scalar
+     length of list, len()
+     print("\nList length:", len(numbers))
+     del numbers[1]
+     print(numbers[-1]). Index -1 == last element of list, -2 second from end etc
+     
+ FUNCTIONS vs METHODS
+ A method is a specific kind of function
+ A function doesn't belong to any data - it gets data, it may create new data and it (generally) produces a result.
+ A method does all these things, but is also able to change the state of a selected entity 
+ A method is owned by the data it works for, while a function is owned by the whole code.
+ result = data.method(arg)
+list.append() = puts an element at list of list
+list.insert(location,value) = inserts value in location
+
+SWAP
+variable_1 = 1
+variable_2 = 2
+variable_1, variable_2 = variable_2, variable_1
+     
+     
+     
+    
