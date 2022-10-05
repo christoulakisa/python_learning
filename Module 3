@@ -62,4 +62,43 @@ for i in range(2, 8, 2): //////// 2 is first value, 8 will not be assigned (will
  
 for i in range(1,6):
     print(i , "Mississippi")
+    
+break - exits the loop immediately, and unconditionally ends the loop's operation; the program begins to execute the nearest instruction after the loop's body;
+continue - behaves as if the program has suddenly reached the end of the body; the next turn is started and the condition expression is tested immediately.
 
+print("\nThe continue instruction:")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print("Inside the loop.", i)
+print("Outside the loop.")
+
+
+PROGRAM TO USE CONTINUE,REMOVE VOWELS FROM WORDS
+user_word=(input("Please provide a word: \n"))
+user_word = user_word.upper()
+
+for letter in user_word:
+    # Complete the body of the for loop.
+    if letter == 'A' or letter == 'E' or letter == 'I' or letter == 'O' or letter == 'U' :
+        continue
+    print (letter)
+
+
+As you may have suspected, loops may have the else branch too, like ifs.
+The loop's else branch is always executed once, regardless of whether the loop has entered its body or not.
+
+GIVEN A NUMBER, calculate height of pyramid where each layer has +1 brick than below
+blocks = int(input("Enter the number of blocks: "))
+height=0
+while (blocks > 0):
+    if (blocks>=height+1):
+        height+=1
+        blocks-=height
+    else:
+        break
+print("The height of the pyramid:", height)
+
+
+BOOLEAN 
+and,or,not
