@@ -130,13 +130,22 @@ LISTS
  A method is owned by the data it works for, while a function is owned by the whole code.
  result = data.method(arg)
 list.append() = puts an element at list of list
-list.insert(location,value) = inserts value in location
+list.(location,value) = inserts value in location
 
 SWAP
 variable_1 = 1
 variable_2 = 2
 variable_1, variable_2 = variable_2, variable_1
      
-     
+my_list = [10, 1, 8, 3, 5]
+length = len(my_list)
+for i in range(length // 2):
+    my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i]
+print(my_list)   
      
     
+lst = [5, 3, 1, 2, 4]
+print(lst)
+lst.sort()
+print(lst)  # outputs: [1, 2, 3, 4, 5]
+
