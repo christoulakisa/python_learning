@@ -149,3 +149,27 @@ print(lst)
 lst.sort()
 print(lst)  # outputs: [1, 2, 3, 4, 5]
 
+
+will print 2 because
+the name of an ordinary variable is the name of its content;
+the name of a list is the name of a memory location where the list is stored.
+
+A slice is an element of Python syntax that allows you to make a brand new copy of a list, or parts of a list.
+It actually copies the list's contents, not the list's name.
+list_1 = [1]
+list_2 = list_1[:]
+list_1[0] = 2
+print(list_2)
+
+will print 1
+
+new_list = my_list[1:3] //will have 2 elements, those with inxed 1 and 2 (but not 3)
+
+in/not in operators
+
+my_list = [0, 3, 12, 8, 2]
+print(5 in my_list)
+print(5 not in my_list)
+
+list comprehension
+twos = [2 ** i for i in range(8)]
