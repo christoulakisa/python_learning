@@ -173,3 +173,37 @@ print(5 not in my_list)
 
 list comprehension
 twos = [2 ** i for i in range(8)]
+
+
+2.Dimension arrays
+
+board = []
+
+for i in range(8):
+    row = [EMPTY for i in range(8)]
+    board.append(row)
+    
+________
+temps = [[0.0 for h in range(24)] for d in range(31)]
+
+3 buildings, 15floors,20 rooms
+rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
+
+
+list comprehension
+[expression for element in list if conditional]
+
+which equals
+
+for element in list:
+    if conditional:
+        expression
+        
+cubed = [num ** 3 for num in range(5)]
+print(cubed)  # outputs: [0, 1, 8, 27, 64]
+
+
+
+
+
+
